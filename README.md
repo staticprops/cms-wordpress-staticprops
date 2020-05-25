@@ -1,10 +1,10 @@
-# A statically generated blog example using Next.js and DatoCMS
+# A statically generated blog example using Next.js and Staticprops.com Wordpres
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [DatoCMS](https://www.datocms.com/) as the data source.
+This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Staticprops](https://www.staticprops.com/) as the data source.
 
 ## Demo
 
-[https://next-blog-datocms.now.sh/](https://next-blog-datocms.now.sh/)
+[https://next-blog-staticprops.now.sh/](https://next-blog-staticprops.now.sh/)
 
 ### Related examples
 
@@ -20,9 +20,9 @@ This example showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-npm init next-app --example cms-datocms cms-datocms-app
+npm init next-app --example cms-staticprops cms-staticprops-app
 # or
-yarn create next-app --example cms-datocms cms-datocms-app
+yarn create next-app --example cms-staticprops cms-staticprops-app
 ```
 
 ### Download manually
@@ -30,15 +30,15 @@ yarn create next-app --example cms-datocms cms-datocms-app
 Download the example:
 
 ```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/cms-datocms
-cd cms-datocms
+curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/cms-staticprops
+cd cms-staticprops
 ```
 
 ## Configuration
 
-### Step 1. Create an account and a project on DatoCMS
+### Step 1. Create an account and a project on Staticprops
 
-First, [create an account on DatoCMS](https://datocms.com).
+First, [create an account on Staticprops](https://staticprops.com).
 
 After creating an account, create a **new project** from the dashboard. You can select a **Blank Project**.
 
@@ -102,14 +102,14 @@ cp .env.example .env
 
 Then set each variable on `.env`:
 
-- `NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN` should be the API token you just copied.
-- `NEXT_EXAMPLE_CMS_DATOCMS_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [the Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
+- `NEXT_EXAMPLE_CMS_STATICPROPS_API_TOKEN` should be the API token you just copied.
+- `NEXT_EXAMPLE_CMS_STATICPROPS_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [the Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
 
 Your `.env` file should look like this:
 
 ```bash
-NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN=...
-NEXT_EXAMPLE_CMS_DATOCMS_PREVIEW_SECRET=...
+NEXT_EXAMPLE_CMS_STATICPROPS_API_TOKEN=...
+NEXT_EXAMPLE_CMS_STATICPROPS_PREVIEW_SECRET=...
 ```
 
 ### Step 6. Run Next.js in development mode
@@ -128,7 +128,7 @@ Your blog should be up and running on [http://localhost:3000](http://localhost:3
 
 ### Step 7. Try preview mode
 
-On DatoCMS, go to one of the posts you've created and:
+On Staticprops, go to one of the posts you've created and:
 
 - **Update the title**. For example, you can add `[Draft]` in front of the title.
 - Click **Save**, but **DO NOT** click **Publish**. By doing this, the post will be in the draft state.
@@ -143,8 +143,8 @@ To enable the Preview Mode, go to this URL:
 http://localhost:3000/api/preview?secret=<secret>&slug=<slug>
 ```
 
-- `<secret>` should be the string you entered for `NEXT_EXAMPLE_CMS_DATOCMS_PREVIEW_SECRET`.
-- `<slug>` should be the post's `slug` attribute (you can check on DatoCMS).
+- `<secret>` should be the string you entered for `NEXT_EXAMPLE_CMS_STATICPROPS_PREVIEW_SECRET`.
+- `<slug>` should be the post's `slug` attribute (you can check on Staticprops).
 
 You should now be able to see the updated title. To exit the preview mode, you can click **Click here to exit preview mode** at the top.
 
@@ -154,11 +154,11 @@ You can deploy this app to the cloud with [Vercel](https://vercel.com/import?fil
 
 To deploy on Vercel, you need to set the environment variables with **Now Secrets** using [Vercel CLI](https://vercel.com/download) ([Documentation](https://vercel.com/docs/now-cli#commands/secrets)).
 
-Install [Vercel CLI](https://vercel.com/download), log in to your account from the CLI, and run the following commands to add the environment variables. Replace `<NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN>` and `<NEXT_EXAMPLE_CMS_DATOCMS_PREVIEW_SECRET>` with the corresponding strings in `.env`.
+Install [Vercel CLI](https://vercel.com/download), log in to your account from the CLI, and run the following commands to add the environment variables. Replace `<NEXT_EXAMPLE_CMS_STATICPROPS_API_TOKEN>` and `<NEXT_EXAMPLE_CMS_STATICPROPS_PREVIEW_SECRET>` with the corresponding strings in `.env`.
 
 ```
-now secrets add next_example_cms_datocms_api_token <NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN>
-now secrets add next_example_cms_datocms_preview_secret <NEXT_EXAMPLE_CMS_DATOCMS_PREVIEW_SECRET>
+now secrets add next_example_cms_staticprops_api_token <NEXT_EXAMPLE_CMS_STATICPROPS_API_TOKEN>
+now secrets add next_example_cms_staticprops_preview_secret <NEXT_EXAMPLE_CMS_STATICPROPS_PREVIEW_SECRET>
 ```
 
 Then push the project to GitHub/GitLab/Bitbucket and [import to Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) to deploy.
