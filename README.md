@@ -4,14 +4,14 @@ This example showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 
 ## Demo
 
-[https://next-blog-staticprops.now.sh/](https://next-blog-staticprops.now.sh/)
+[https://cms-wordpress-staticprops.now.sh/](https://cms-wordpress-staticprops.now.sh/)
 
 ### Related examples
 
-- [Blog Starter](/examples/blog-starter)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
+- [Blog Starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
+- [Sanity](https://github.com/vercel/next.js/tree/canary/examples/cms-sanity)
+- [TakeShape](https://github.com/vercel/next.js/tree/canary/examples/cms-takeshape)
+- [Prismic](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
 
 ## How to use
 
@@ -20,27 +20,16 @@ This example showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-npm init next-app --example cms-staticprops cms-staticprops-app
+npm init next-app --example https://github.com/dazuaz/cms-wordpress-staticprops cms-staticprops-app
 # or
-yarn create next-app --example cms-staticprops cms-staticprops-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/cms-staticprops
-cd cms-staticprops
+yarn create next-app --example https://github.com/dazuaz/cms-wordpress-staticprops cms-staticprops-app
 ```
 
 ## Configuration
 
-### Step 1. Create an account and a project on Staticprops
+### Step 1. Create a deployment on Staticprops
 
 First, [create an account on Staticprops](https://staticprops.com).
-
-After creating an account, create a **new project** from the dashboard. You can select a **Blank Project**.
 
 ### Step 2. Create an `Author` model
 
@@ -53,40 +42,13 @@ Next, add these fields (you don't have to modify the settings):
 - `Name` - **Text** field (**Single-line String**)
 - `Picture` - **Media** field (**Single asset**)
 
-### Step 3. Create a `Post` model
+### Step 3. Create a `Post`
 
-From the project setting page, create a new **Model**:
-
-- The name should be `Post`.
-- **Important:** From the "Additional Settings" tab, turn on **Enable draft/published system.** This lets you preview the content.
-
-Next, add these fields (you don't have to modify the settings unless specified):
-
-- `Title` - **Text** field (**Single-line String**)
-- `Content` - **Text** field (**Multiple-paragraph Text**)
-- `Excerpt` - **Text** field (**Single-line String**)
-- `Cover Image` - **Media** field (**Single asset**)
-- `Date` - **Date and time** field (**Date**)
-- `Author` - **Links** field (**Single link**) , and from the "Validations" tab under "Accept only specified model", select **Author**.
-- `Slug` - **SEO** field (**Slug**), and from the "Validations" tab under "Reference field" select **Title**.
+Create a new Post on wordpress Admin
 
 ### Step 4. Populate Content
 
-From the **Content** menu at the top, select **Author** and create a new record.
-
-- You just need **1 Author record**.
-- Use dummy data for the text.
-- For the image, you can download one from [Unsplash](https://unsplash.com/).
-
-Next, select **Post** and create a new record.
-
-- We recommend creating at least **2 Post records**.
-- Use dummy data for the text.
-- You can write markdown for the **Content** field.
-- For the images, you can download ones from [Unsplash](https://unsplash.com/).
-- Pick the **Author** you created earlier.
-
-**Important:** For each post record, you need to click **Publish** after saving. If not, the post will be in the draft state.
+You need to click **Publish**. If not, the post will be in the draft state.
 
 ### Step 5. Set up environment variables
 
