@@ -3725,9 +3725,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 longest-streak@^2.0.1:
   version "2.0.4"
@@ -5423,14 +5423,6 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-staticprops@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/react-staticprops/-/react-staticprops-1.2.4.tgz#61aa4550ea2d206eebc2d7c82c01c53849c876f3"
-  integrity sha512-emMTK64FQHFD5xt8yVTBZNQO+px8+5rxmtRk1Xl8CKqc5ELsoULvSabJ2zSL9aw7N7ZlD6xYQrWXvQhHWkRemA==
-  dependencies:
-    intersection-observer "^0.10.0"
-    react-intersection-observer "^8.26.1"
-
 react-dom@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
@@ -5457,6 +5449,14 @@ react-refresh@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.2.tgz#24bb0858eac92b0d7b0dd561747f0c9fd6c60327"
   integrity sha512-n8GXxo3DwM2KtFEL69DAVhGc4A1THn2qjmfvSo3nze0NLCoPbywazeJPqdp0RdSGLmyhQzeyA+XPXOobbYlkzg==
+
+react-staticprops@1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/react-staticprops/-/react-staticprops-1.2.4.tgz#61aa4550ea2d206eebc2d7c82c01c53849c876f3"
+  integrity sha512-emMTK64FQHFD5xt8yVTBZNQO+px8+5rxmtRk1Xl8CKqc5ELsoULvSabJ2zSL9aw7N7ZlD6xYQrWXvQhHWkRemA==
+  dependencies:
+    intersection-observer "^0.10.0"
+    react-intersection-observer "^8.26.1"
 
 react@^16.13.1:
   version "16.13.1"
