@@ -2528,9 +2528,9 @@ electron-to-chromium@^1.3.413:
   integrity sha512-2fvco0F2bBIgqzO8GRP0Jt/91pdrf9KfZ5FsmkYkjERmIJG585cFeFZV4+CO6oTmU3HmCTgfcZuEa7kW8VUh3A==
 
 elliptic@^6.0.0, elliptic@^6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.2.tgz#05c5678d7173c049d8ca433552224a495d0e3762"
-  integrity sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
+  integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
   dependencies:
     bn.js "^4.4.0"
     brorand "^1.0.1"
@@ -5423,14 +5423,6 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-staticprops@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/react-staticprops/-/react-staticprops-1.2.4.tgz#61aa4550ea2d206eebc2d7c82c01c53849c876f3"
-  integrity sha512-emMTK64FQHFD5xt8yVTBZNQO+px8+5rxmtRk1Xl8CKqc5ELsoULvSabJ2zSL9aw7N7ZlD6xYQrWXvQhHWkRemA==
-  dependencies:
-    intersection-observer "^0.10.0"
-    react-intersection-observer "^8.26.1"
-
 react-dom@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
@@ -5457,6 +5449,14 @@ react-refresh@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.2.tgz#24bb0858eac92b0d7b0dd561747f0c9fd6c60327"
   integrity sha512-n8GXxo3DwM2KtFEL69DAVhGc4A1THn2qjmfvSo3nze0NLCoPbywazeJPqdp0RdSGLmyhQzeyA+XPXOobbYlkzg==
+
+react-staticprops@1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/react-staticprops/-/react-staticprops-1.2.4.tgz#61aa4550ea2d206eebc2d7c82c01c53849c876f3"
+  integrity sha512-emMTK64FQHFD5xt8yVTBZNQO+px8+5rxmtRk1Xl8CKqc5ELsoULvSabJ2zSL9aw7N7ZlD6xYQrWXvQhHWkRemA==
+  dependencies:
+    intersection-observer "^0.10.0"
+    react-intersection-observer "^8.26.1"
 
 react@^16.13.1:
   version "16.13.1"
